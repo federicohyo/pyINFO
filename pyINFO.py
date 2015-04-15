@@ -90,7 +90,7 @@ def exp_fit_autocorr(signal):
     plot(t, norm_autocorr, t, fit_y, (A0, K0, C0), (A, K, C0)) 
 
 def RQA(indata, delay, embed, radius, line_min, scale_type, first, last):
-    ''' perform RQA analysis
+    ''' performs RQA analysis
     indata: time serie  return full_rms
     delay: embedding delays
     embed: embedding dimensions
@@ -379,9 +379,9 @@ def ismember(a, b):
     return tf, index
 
 def lyapunov_rosenstein(x,m,tao,meanperiod,maxiter, dt=0.01):
-    ''' this function estimate the lyapunov exponent of a time series x
+    ''' this function estimates the lyapunov exponent of a time series x
     x: time series
-    m: embedding dimension
+    m: embedding dimensions
     tao: time delay
     meanperiod: mean period
     maxiter: max number of iterations
@@ -444,7 +444,7 @@ def lyapunov_rosenstein(x,m,tao,meanperiod,maxiter, dt=0.01):
     return lle,dd,ff
 
 def fnn_embedded_dim(x,tao,mmax,rtol=15,atol=2):
-    ''' this function estimate embedding dimension with the method
+    ''' this function estimates embedding dimensions with the method
     of the nearest neighbours.
     ref: D.I. Abarnabel determining embedding dimension for phase-space
     reconstruction using a geometrical construction. Phys ReV. A. 1992
